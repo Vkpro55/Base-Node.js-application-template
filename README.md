@@ -25,6 +25,10 @@ Let's take a look inside "src" folder:
   ```
     PORT= <PORT number of your choice> For Example: PORT= 3000 || 5000 || 8000
   ```
+- Install the dependencies:
+  ```
+    npm install
+  ```
 - Indise the `src/config` folder, create a file named as `config.json` and write the following code:
 
   ```
@@ -53,8 +57,19 @@ Let's take a look inside "src" folder:
     }
   ```
 
+- Go inside the `src` folder and run following command:
+
+  ```
+    npx sequelize init
+  ```
+
 - If you are setting up your development environment, then write the username and password of your db and in dialect mention the type of database your are using. For Example:
   ```
     one of 'mysql' | 'postgres' | 'sqlite' | 'mariadb' | 'mssql' | 'db2' | 'snowflake' | 'oracle'
   ```
 - If you are setting up the test or production environment, then specify the host(Url where your DB is hosted).
+
+- Start the development server:
+  ```
+    npm run start
+  ```
